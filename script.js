@@ -73,7 +73,7 @@ const typed = new Typed('#typed', {
         'Machine Learning Engineer',
         'AI Developer',
         'Data Scientist',
-        'Cybersecurity Learner'
+        'Cybersecurity Expert'
     ],
     typeSpeed: 50,
     backSpeed: 30,
@@ -108,50 +108,6 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.skill-card, .project-card, .timeline-item').forEach(el => {
     observer.observe(el);
 });
-
-// Form Submission
-function submitForm() {
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
-
-    // Clear previous error
-    document.getElementById('email').classList.remove('error');
-
-    if (!validateEmail(email)) {
-        document.getElementById('email').classList.add('error');
-        alert('Please enter a valid email address.');
-        return;
-    }
-
-    const data = { name, email, message };
-
-    fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-    })
-    .then(response => response.json())
-    .then(data => {
-        if (data.success) {
-            alert('Message sent successfully!');
-            document.getElementById('contact-form').reset();
-        } else {
-            alert('Failed to send message: ' + (data.error || 'Unknown error'));
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('An error occurred. Please try again later.');
-    });
-}
-
-function validateEmail(email) {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email.toLowerCase());
-}
 
 // Navbar Scroll Effect
 let lastScroll = 0;
