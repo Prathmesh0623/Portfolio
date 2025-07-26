@@ -71,9 +71,11 @@ particlesJS('particles-js', {
 const typed = new Typed('#typed', {
     strings: [
         'Machine Learning Engineer',
-        'AI Developer',
-        'Data Scientist',
-        'Cybersecurity Enthusiast'
+        'AI & Deep Learning Developer',
+        'Data Science & MLOps Practitioner ',
+        'Cybersecurity & Digital Forensics Enthusiast ',
+        'Cloud & Backend Developer',
+        'Full Stack Web Developer'
     ],
     typeSpeed: 50,
     backSpeed: 30,
