@@ -73,7 +73,7 @@ const typed = new Typed('#typed', {
         'Machine Learning Engineer',
         'AI Developer',
         'Data Scientist',
-        'Cybersecurity Expert'
+        'Cybersecurity Enthusiast'
     ],
     typeSpeed: 50,
     backSpeed: 30,
