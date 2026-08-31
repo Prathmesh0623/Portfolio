@@ -103,6 +103,13 @@ body {
     font-size: 2.2rem;
     margin: 1.5rem 0;
     font-weight: 300;
+    min-height: 1.2em;
+    white-space: nowrap;
+}
+
+#typed {
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .hero-buttons {
