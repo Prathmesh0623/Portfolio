@@ -80,8 +80,7 @@ const typed = new Typed('#typed', {
     backDelay: 1500,
     startDelay: 500,
     loop: true,
-    showCursor: true,
-    cursorChar: '|'
+    smartBackspace: false
 });
 
 // Smooth Scroll for Navigation Links
