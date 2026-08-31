@@ -73,14 +73,15 @@ const typed = new Typed('#typed', {
         'Machine Learning Engineer',
         'AI & Deep Learning Developer',
         'Data Science & MLOps Practitioner ',
-        'Cybersecurity & Digital Forensics Enthusiast ',
-        'Cloud & Backend Developer',
-        'Full Stack Web Developer'
+        'Cybersecurity & Digital Forensics Enthusiast '
     ],
     typeSpeed: 50,
     backSpeed: 30,
     backDelay: 1500,
-    loop: true
+    startDelay: 500,
+    loop: true,
+    showCursor: true,
+    cursorChar: '|'
 });
 
 // Smooth Scroll for Navigation Links
