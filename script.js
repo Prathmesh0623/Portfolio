@@ -72,8 +72,8 @@ const typed = new Typed('#typed', {
     strings: [
         'Machine Learning Engineer',
         'AI & Deep Learning Developer',
-        'Data Science & MLOps Practitioner ',
-        'Cybersecurity & Digital Forensics Enthusiast '
+        'Data Science & MLOps Practitioner',
+        'Cybersecurity & Digital Forensics Enthusiast'
     ],
     typeSpeed: 50,
     backSpeed: 30,
